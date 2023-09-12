@@ -1,0 +1,14 @@
+:root {
+  --text-color: #f7dba7;
+  --header-color: #041f1e;
+  --body-color: #c57b57;
+  --button-color: #1e2d2f;
+}
+
+.project-late {
+  background-color: antiquewhite;
+}
+
+.project-today {
+  background-color: rgb(202, 159, 217);
+}
