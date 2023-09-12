@@ -8,6 +8,7 @@
 body {
   background-color: var(--body-color);
   font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
 }
 header {
   background-color: var(--header-color);
