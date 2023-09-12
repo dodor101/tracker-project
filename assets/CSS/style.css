@@ -3,12 +3,48 @@
   --header-color: #041f1e;
   --body-color: #c57b57;
   --button-color: #1e2d2f;
+  --today-project: #f1ab86;
+}
+body {
+  background-color: var(--body-color);
+  font-family: 'Playfair Display', serif;
+}
+header {
+  background-color: var(--header-color);
+}
+footer {
+  font-size: 2rem;
+  background-color: var(--header-color);
+}
+
+.custom-bg {
+  background-color: var(--body-color);
+  font-size: 2rem;
+}
+
+.custom-btn {
+  background-color: var(--button-color);
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+.custom-btn:hover {
+  color: var(--text-color);
 }
 
 .project-late {
-  background-color: antiquewhite;
+  background-color: var(--text-color);
+}
+.custom-table-head {
+  background-color: var(--header-color);
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
+.custom-table {
+  -webkit-box-shadow: 5px 5px 27px 5px rgba(0, 0, 0, 0.38);
+  box-shadow: 5px 5px 27px 5px rgba(0, 0, 0, 0.38);
 }
 
 .project-today {
-  background-color: rgb(202, 159, 217);
+  background-color: var(--today-project);
 }

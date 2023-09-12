@@ -10,12 +10,17 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/CSS/style.css" />
 
     <title>Project Tracker</title>
   </head>
   <body>
-    <header class="container-fluid bg-secondary text-light p-5 text-center mb-3">
+    <header class="container-fluid text-light p-5 text-center mb-3">
       <h1>Welcome to Project Tracker</h1>
       <br />
       <h3 class="display-time"></h3>
@@ -23,16 +28,16 @@
 
     <main class="min-vh-100 container-fluid  p-5 ">
       <section class="row g-4">
-        <div class="card col-12 col-md-6 col-xl-4 " >
+        <div class="card col-12 col-md-8 col-xl-4  custom-card" >
           <div class="card-body">
-            <h5 class="card-title bg-info text-light text-center rouded">Instructions</h5>
-            <ul class="list-group">
+            <h5 class="card-title custom-bg text-light text-center rouded p-2">Instructions</h5>
+            <ul class="list-group ">
               <li class="list-group-item">Project name</li>
               <li class="list-group-item">Project Type (select)</li>
               <li class="list-group-item">Due Date</li>
             </ul>
             <div class="card-footer">
-              <button class="btn btn-block btn-primary w-100" data-bs-toggle="modal" data-bs-target="#new-project-modal">
+              <button class="btn btn-block custom-btn w-100" data-bs-toggle="modal" data-bs-target="#new-project-modal">
                 Add Project
               </button>
             </div>
@@ -40,10 +45,10 @@
         </div>
 
         <!--  -->
-        <div class="col-12 col-md-8 col-xl-8">
+        <div class="col-12 col-md-8 col-xl-8 ">
           <!-- Project Table -->
-          <table class="table bg-light">
-            <thead class='bg-warning'>
+          <table class="table bg-light  custom-table">
+            <thead class='custom-table-head'>
               <tr>
                 <th>Name</th>
                 <th>Type</th>
@@ -78,6 +83,7 @@
 
 
     </main>
+    <footer class='text-center text-light p-5'><small>Project tracker</small></footer>
 
     <div
       class="modal fade "
@@ -89,7 +95,7 @@
       <div class="modal-dialog rounded">
         <div class="modal-content">
           <form id="project-form">
-            <div class="modal-header bg-primary text-light">
+            <div class="modal-header custom-btn ">
               <h5 class="modal-title" id="new-project-modal-label">Add a new project</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -125,8 +131,8 @@
                 The data-bs-dismiss attribute tells Bootstrap to hide the <div
                 class="modal-footer"> element on click.
               -->
-              <button type="button" class="btn btn-outline-secondary btn-danger text-light" data-bs-dismiss="modal">Cancel</button>
-              <button type="submit" class="btn  btn-success" data-bs-dismiss="modal">Add Project</button>
+              <button type="button" class="btn btn-outline-secondary custom-btn  text-light" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn  custom-btn" data-bs-dismiss="modal">Add Project</button>
             </div>
           </form>
         </div>
